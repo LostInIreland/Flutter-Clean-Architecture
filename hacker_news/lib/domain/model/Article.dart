@@ -4,7 +4,7 @@ class Article {
   String title;
   ArticleType type;
 
-  Article(this.type, this.title);
+  Article(this.id, this.title, this.type);
 
 }
 
