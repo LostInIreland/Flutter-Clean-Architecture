@@ -4,6 +4,7 @@ class ArticleEntity {
   int id;
   String title;
   String type;
+  int descendants;
 
-  ArticleEntity(this.id, this.title, this.type);
+  ArticleEntity(this.id, this.title, this.type, this.descendants);
 }

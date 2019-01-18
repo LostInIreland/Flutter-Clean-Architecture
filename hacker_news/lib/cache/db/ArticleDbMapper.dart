@@ -9,7 +9,8 @@ class ArticleDbMapper {
     return {
       ArticleTable.ID: model.id,
       ArticleTable.TITLE: model.title,
-      ArticleTable.TYPE: model.type
+      ArticleTable.TYPE: model.type,
+      ArticleTable.DESCENDANTS: model.descendants
     };
   }
 
@@ -18,7 +19,8 @@ class ArticleDbMapper {
     return CachedArticle(
         values[ArticleTable.ID],
         values[ArticleTable.TITLE],
-        values[ArticleTable.TYPE]
+        values[ArticleTable.TYPE],
+        values[ArticleTable.DESCENDANTS]
     );
   }
 }

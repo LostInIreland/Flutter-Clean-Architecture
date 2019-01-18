@@ -7,6 +7,6 @@ import 'package:hacker_news/remote/model/RemoteArticle.dart';
 class ArticleRemoteMapper implements Mapper<RemoteArticle, ArticleEntity> {
   @override
   ArticleEntity mapFromRemote(RemoteArticle type) {
-    return ArticleEntity(type.id, type.title, type.type);
+    return ArticleEntity(type.id, type.title, type.type, type.descendants);
   }
 }

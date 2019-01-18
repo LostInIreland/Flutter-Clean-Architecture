@@ -7,12 +7,12 @@ import 'package:hacker_news/data/model/ArticleEntity.dart';
 class ArticleCacheMapper implements Mapper<CachedArticle, ArticleEntity> {
   @override
   ArticleEntity mapFromCache(CachedArticle type) {
-    return ArticleEntity(type.id, type.title, type.type);
+    return ArticleEntity(type.id, type.title, type.type, type.descendants);
   }
 
   @override
   CachedArticle mapToCache(ArticleEntity type) {
-    return CachedArticle(type.id, type.title, type.type);
+    return CachedArticle(type.id, type.title, type.type, type.descendants);
   }
 
 }

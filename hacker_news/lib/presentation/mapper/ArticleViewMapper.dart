@@ -7,6 +7,6 @@ import 'package:hacker_news/presentation/model/ArticleView.dart';
 class ArticleViewMapper implements Mapper<Article, ArticleView> {
   @override
   ArticleView mapToView(Article type) {
-    return ArticleView(type.id, type.title, type.type.value);;
+    return ArticleView(type.id, type.title, type.type.value, type.descendants);
   }
 }

@@ -6,6 +6,7 @@ class ArticleTable {
   static const String ID = "id";
   static const String TITLE = "title";
   static const String TYPE = "type";
+  static const String DESCENDANTS = "descendants";
 
   static const String CREATE = "CREATE TABLE " +
       TABLE_NAME +
@@ -16,5 +17,7 @@ class ArticleTable {
       " TEXT," +
       TYPE +
       " TEXT," +
+      DESCENDANTS +
+      " INTEGER" +
       "); ";
 }

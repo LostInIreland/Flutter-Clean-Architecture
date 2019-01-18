@@ -3,8 +3,9 @@ class Article {
   int id;
   String title;
   ArticleType type;
+  int descendants;
 
-  Article(this.id, this.title, this.type);
+  Article(this.id, this.title, this.type, this.descendants);
 
 }
 

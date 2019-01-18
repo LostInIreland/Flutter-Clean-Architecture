@@ -3,14 +3,16 @@ class RemoteArticle {
   int id;
   String title;
   String type;
+  int descendants;
 
-  RemoteArticle(this.id, this.title, this.type);
+  RemoteArticle(this.id, this.title, this.type, this.descendants);
 
   factory RemoteArticle.fromJson(Map<String, dynamic> json) {
     return RemoteArticle(
       json['id'],
       json['title'],
-      json['type']
+      json['type'],
+      json['descendants']
     );
   }
 }

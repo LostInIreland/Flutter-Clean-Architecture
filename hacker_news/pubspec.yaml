@@ -17,6 +17,8 @@ dependencies:
   shared_preferences: ^0.4.3
   sqflite: ^1.0.0
   path_provider: ^0.4.1
+  kiwi: ^0.1.0
+
   flutter:
     sdk: flutter
 

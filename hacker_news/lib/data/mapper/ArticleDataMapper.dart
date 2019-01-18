@@ -9,12 +9,12 @@ class ArticleDataMapper implements Mapper<ArticleEntity, Article> {
   /// Map a [ArticleEntity] instance to a [Article] instance
   @override
   Article mapFromEntity(ArticleEntity type) {
-    return Article(type.id, type.title, ArticleType(type.type));
+    return Article(type.id, type.title, ArticleType(type.type), type.descendants);
   }
 
   /// Map a [Article] instance to a [ArticleEntity] instance
   @override
   ArticleEntity mapToEntity(Article type) {
-    return ArticleEntity(type.id, type.title, type.type.value);
+    return ArticleEntity(type.id, type.title, type.type.value, type.descendants);
   }
 }
