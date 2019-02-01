@@ -22,6 +22,7 @@ Clean Architecture is not be appropriate for every project, so it is down to you
 
 The sample app when run will show you a simple list of hacker news (Same as the Flutter boring show https://www.youtube.com/watch?v=CPmN4-i9zC8&list=PLOU2XLYxmsIK0r_D-zWcmJ1plIcDNnRkK).
 
+![Screenshot](sample.png)
 
 
 
