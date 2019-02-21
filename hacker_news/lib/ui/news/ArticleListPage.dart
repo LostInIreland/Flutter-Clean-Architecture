@@ -1,10 +1,10 @@
 import 'package:hacker_news/presentation/model/ArticleView.dart';
 import 'package:hacker_news/presentation/news/ArticleListContract.dart';
 import 'package:hacker_news/presentation/news/ArticleListPresenter.dart';
+import 'package:hacker_news/ui/injection/Injector.dart';
 import 'package:hacker_news/ui/mapper/ArticleViewModelMapper.dart';
 import 'package:hacker_news/ui/model/ArticleViewModel.dart';
 import 'package:hacker_news/ui/news/ArticleListView.dart';
-import 'package:kiwi/kiwi.dart' as kiwi;
 import 'package:flutter/material.dart';
 
 class ArticleListPage extends StatefulWidget {
@@ -14,8 +14,8 @@ class ArticleListPage extends StatefulWidget {
 
   @override
   ArticleListPageState createState() {
-    var view = kiwi.Container().resolve<ArticleListPageState>();
-    var presenter = kiwi.Container().resolve<ArticleListPresenter>();
+    var view = injector.resolve<ArticleListPageState>();
+    var presenter = injector.resolve<ArticleListPresenter>();
     view.setPresenter(presenter);
 
     return view;
